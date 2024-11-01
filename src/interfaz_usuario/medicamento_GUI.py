@@ -69,7 +69,6 @@ class medicamento_GUI:
         for paciente in self.instancias_pacientes:
             if paciente_combobox == paciente.nombreCompleto:
                 paciente.agregar_registro(registro)
-                print('registrado')
 
         self.limpiar_campos()
 

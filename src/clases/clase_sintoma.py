@@ -5,8 +5,4 @@ class clase_sintoma:
         self.hora = hora
 
     def mostrar_registro(self):
-        return f'Medicamento: {self.sintoma}, el día {self.fecha} a las {self.hora}'
-
-
-
-
+        return f'Síntoma: {self.sintoma}, el día {self.fecha} a las {self.hora}'

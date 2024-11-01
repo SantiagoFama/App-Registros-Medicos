@@ -5,7 +5,6 @@ class registros_GUI:
     nombres_pacientes_comboBox = []
     instancias_pacientes = []
 
-
     def __init__(self, aplicacion):
         self.frame = ctk.CTkFrame(aplicacion)
         self.frame.pack(anchor='n', padx=20, pady=20, expand=False)
@@ -21,15 +20,12 @@ class registros_GUI:
         paciente = self.combo.get()
         self.borrar_registros()
 
-        for nombre in self.nombres_pacientes_comboBox:
-            if nombre == paciente:
-                for pac in self.instancias_pacientes:
-                    if pac.nombreCompleto == nombre:
-                        for reg in pac.registros_paciente:
-                            texto_registro = reg.mostrar_registro()
-                            label = ctk.CTkLabel(self.frame, text=texto_registro)
-                            label.pack(anchor="w", padx=10, pady=5)
-
+        for pac in self.instancias_pacientes:
+            if pac.nombreCompleto == paciente:
+                for reg in pac.registros_paciente:
+                    texto_registro = reg.mostrar_registro()
+                    label = ctk.CTkLabel(self.frame, text=texto_registro)
+                    label.pack(anchor="w", padx=10, pady=5)
 
     def borrar_registros(self):
         for label in self.frame.winfo_children():

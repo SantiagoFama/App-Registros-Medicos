@@ -12,7 +12,7 @@ class GUI_principal:
         self.app = ctk.CTk()
         self.app.geometry('400x400+250+40')                     # Tamaño
         self.app.title('Registro Enfermedades')                 # Título
-        self.app.iconbitmap("interfaz_usuario/icono.ico")                        # Icono
+        self.app.iconbitmap("interfaz_usuario/icono.ico")       # Icono
         self.app.configure(bg='azure2')                         # Color de fondo
 
         self.frame_contenedor = ctk.CTkFrame(self.app)
