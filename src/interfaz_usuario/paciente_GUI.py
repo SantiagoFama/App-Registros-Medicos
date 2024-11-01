@@ -1,5 +1,5 @@
 import customtkinter as ctk
-from clases.clase_paciente import paciente
+from src.clases.clase_paciente import paciente
 
 
 class paciente_GUI:

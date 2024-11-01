@@ -1,6 +1,5 @@
 import customtkinter as ctk
 
-
 class registros_GUI:
 
     nombres_pacientes_comboBox = []

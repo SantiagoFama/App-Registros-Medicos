@@ -2,7 +2,7 @@ import customtkinter as ctk
 from tkcalendar import *
 import tkinter as ttk
 
-from clases.clase_medicamento import clase_medicamento
+from src.clases.clase_medicamento import clase_medicamento
 
 class medicamento_GUI:
 

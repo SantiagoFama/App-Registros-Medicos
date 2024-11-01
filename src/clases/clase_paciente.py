@@ -1,6 +1,6 @@
-from interfaz_usuario.medicamento_GUI import medicamento_GUI
-from interfaz_usuario.sintoma_GUI import sintoma_GUI
-from interfaz_usuario.registros_GUI import registros_GUI
+from src.interfaz_usuario.medicamento_GUI import medicamento_GUI
+from src.interfaz_usuario.sintoma_GUI import sintoma_GUI
+from src.interfaz_usuario.registros_GUI import registros_GUI
 
 
 class paciente:

@@ -2,7 +2,7 @@ import customtkinter as ctk
 from tkcalendar import *
 import tkinter as ttk
 
-from clases.clase_sintoma import clase_sintoma
+from src.clases.clase_sintoma import clase_sintoma
 
 class sintoma_GUI:
 
