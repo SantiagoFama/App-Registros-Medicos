@@ -52,23 +52,23 @@ class medicamento_GUI:
 
         # --------------------------------------------- Botón ----------------------------------------------------------
 
-        boton = ctk.CTkButton(self.frame, text='Crear', command=self.obtener_valor)
+        boton = ctk.CTkButton(self.frame, text='Registrar', command=self.obtener_valor)
         boton.grid(row=5, column=0, columnspan=2, pady=20)
 
     def obtener_valor(self):
         medicamento = self.entryMedicamento.get()
-        fecha_medicamento = self.fecha.get()
+        fecha = self.fecha.get()
         hora = self.hora.get()
         minuos = self.minuto.get()
         hora_total = f'{hora}:{minuos}'
 
-        registro = clase_medicamento(medicamento, fecha_medicamento, hora_total)
+        registro = clase_medicamento(medicamento, fecha, hora_total)
 
         paciente_combobox = self.combo.get()
 
         for paciente in self.instancias_pacientes:
             if paciente_combobox == paciente.nombreCompleto:
-                paciente.agregar_registro(registro)
+                paciente.guardar_datos(fecha, hora_total, medicamento, registro, "medicamento")
 
         self.limpiar_campos()
 

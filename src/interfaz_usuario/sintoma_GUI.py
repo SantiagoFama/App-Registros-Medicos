@@ -69,7 +69,7 @@ class sintoma_GUI:
 
         for paciente in self.instancias_pacientes:
             if nombrePaciente == paciente.nombreCompleto:
-                paciente.agregar_registro(registro)
+                paciente.guardar_datos(fecha, hora_total, sintoma, registro, "sintoma")
 
         self.limpiar_campos()
 

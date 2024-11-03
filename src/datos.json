@@ -1,0 +1,44 @@
+{
+    "pacientes": [
+        "santi f",
+        "santi f",
+        "fede f",
+        "carlos s"
+    ],
+    "sintomas": [
+        {
+            "fecha": [
+                "29-10-2024",
+                "08-10-2024",
+                "08-10-2024",
+                "08-10-2024"
+            ],
+            "hora": [
+                "0:0",
+                "3:0",
+                "3:0",
+                "3:0"
+            ],
+            "paciente": [
+                "santi f",
+                "santi f",
+                "fede f",
+                "carlos s"
+            ],
+            "sintoma": [
+                "fewfe",
+                "wefwef",
+                "wefwef",
+                "wefwef"
+            ]
+        }
+    ],
+    "medicamentos": [
+        {
+            "fecha": [],
+            "hora": [],
+            "paciente": [],
+            "medicamento": []
+        }
+    ]
+}
